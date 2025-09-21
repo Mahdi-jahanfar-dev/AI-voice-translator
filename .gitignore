@@ -1,0 +1,89 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+.pyenv/
+
+.env/
+
+.env
+
+# VSCode & IDE configs
+.vscode/
+.idea/
+
+# Django stuff:
+*.log
+*.pot
+*.pyc
+db.sqlite3
+media/
+staticfiles/
+static/
+local_settings.py
+
+# Django migrations (optional: بعضیا نگه می‌دارن)
+*/migrations/__pycache__/
+*/migrations/*.py
+
+# If using Django debug toolbar panels
+debug_toolbar/
+
+# Pytest / Coverage
+.coverage
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+htmlcov/
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# pytype
+.pytype/
+
+# PyCharm
+*.iml
+*.ipr
+*.iws
+
+# macOS
+.DS_Store
+
+# Docker
+*.pid
+*.seed
+*.pid.lock
