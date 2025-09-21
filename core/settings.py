@@ -51,6 +51,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    
+    # my apps
+    'account',
 ] + THIRD_PARTY_APPS + LOCAL_APPS
 
 REST_FRAMEWORK = {
@@ -60,6 +63,7 @@ REST_FRAMEWORK = {
          'rest_framework_simplejwt.authentication.JWTAuthentication',
      )
 }
+
 
 SPECTACULAR_SETTINGS = {
     'TITLE': 'Your Project API',
