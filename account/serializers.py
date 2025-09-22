@@ -2,7 +2,7 @@ from django.contrib.auth.models import User
 from rest_framework import serializers
 
 
-
+# register serializer
 class UserRegisterSerializer(serializers.ModelSerializer):
     password_2 = serializers.CharField(max_length = 20, required = True, write_only = True, min_length = 8)
     password_1 = serializers.CharField(max_length = 20, required = True, write_only = True, min_length = 8)
@@ -26,6 +26,7 @@ class UserRegisterSerializer(serializers.ModelSerializer):
         return user
 
 
+# login serializer
 class UserLoginSerializer(serializers.Serializer):
     username = serializers.CharField(max_length=150)
     password = serializers.CharField(max_length=128, write_only=True)

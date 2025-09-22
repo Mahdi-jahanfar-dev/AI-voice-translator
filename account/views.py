@@ -9,10 +9,11 @@ from drf_spectacular.utils import extend_schema
 from account.serializers import UserRegisterSerializer, UserLoginSerializer
 
 
-
+# register view
 class UserRegisterAPIView(APIView):
     permission_classes = [AllowAny]
 
+    # description for docs
     @extend_schema(
         request=UserRegisterSerializer,
         responses={201: UserRegisterSerializer},
@@ -25,9 +26,11 @@ class UserRegisterAPIView(APIView):
         return Response({"user": UserRegisterSerializer(user).data}, status=status.HTTP_201_CREATED)
 
 
+# login view
 class UserLoginAPIView(APIView):
     permission_classes = [AllowAny]
 
+    # description for docs
     @extend_schema(
         request=UserLoginSerializer,
         responses={
