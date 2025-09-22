@@ -53,6 +53,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     
     # my apps
+    'main',
     'account',
 ] + THIRD_PARTY_APPS + LOCAL_APPS
 
@@ -63,7 +64,6 @@ REST_FRAMEWORK = {
          'rest_framework_simplejwt.authentication.JWTAuthentication',
      )
 }
-
 
 SPECTACULAR_SETTINGS = {
     'TITLE': 'Your Project API',
@@ -195,6 +195,11 @@ sentry_sdk.init(
 
 STATIC_URL = 'static/'
 STATIC_ROOT = os.path.join(BASE_DIR, "static")
+
+
+MEDIA_URL = "/media/"
+MEDIA_ROOT = os.path.join(BASE_DIR, "media")
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
