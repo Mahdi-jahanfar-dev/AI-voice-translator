@@ -1,7 +1,9 @@
 from django.db import models
+from django.contrib.auth.models import User
 
 
-class VoiceDetail(models.Model):   
+class VoiceDetail(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE,)
     title = models.CharField(max_length=200)
     voice = models.FileField(upload_to="audio", null=True, blank=True)
     voice_text = models.TextField()
